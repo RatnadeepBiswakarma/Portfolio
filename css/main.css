@@ -1,0 +1,69 @@
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.logo {
+    width: 50px;
+    height: auto;
+}
+.header__text {
+    color: #2d3c49;
+    text-align: right;
+    font-family: 'Julius Sans One', sans-serif;
+    line-height: 0.3em;
+}
+.name {
+    font-size: 45px;
+    color: #2d3c49;
+}
+hr {
+    height: 1px;
+    background-color: #7d97ad;
+    margin-bottom: 20px;
+}
+.cover__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.featured__container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.featured__work__heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #7d97ad;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+.work__card {
+    width: calc((100% - 10px) / 3);
+    margin: 5px;
+    height: auto;
+    text-align: center;
+    padding: 0px;
+}
+.work__name {
+    line-height: 0em;
+    font-size: 30px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+.link {
+    font-size: 12px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    line-height: 0em;
+}
+.work__card > img {
+    width: 290px;
+    height: 168px;
+}
