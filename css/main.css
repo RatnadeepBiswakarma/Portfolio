@@ -3,40 +3,51 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 .header {
+    padding: 5px;
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
     justify-content: space-between;
 }
+
 .logo {
     width: 50px;
     height: auto;
 }
+
 .header__text {
     color: #2d3c49;
+    float: right;
     text-align: right;
     font-family: 'Julius Sans One', sans-serif;
-    line-height: 0.3em;
+    line-height: 0em;
 }
+
 .name {
     font-size: 45px;
     color: #2d3c49;
 }
+
 hr {
     height: 1px;
     background-color: #7d97ad;
     margin-bottom: 20px;
 }
+
 .cover__image {
     width: 100%;
     height: auto;
     display: block;
     margin: auto;
 }
+
 .featured__container {
     display: flex;
     flex-flow: row nowrap;
 }
+
 .featured__work__heading {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
@@ -46,24 +57,76 @@ hr {
     font-size: 28px;
     letter-spacing: 1px;
 }
+
 .work__card {
     width: calc((100% - 10px) / 3);
-    margin: 5px;
     height: auto;
     text-align: center;
     padding: 0px;
 }
+
+.middle__card {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .work__name {
-    line-height: 0em;
+    line-height: 0.3em;
     font-size: 30px;
     font-family: 'Julius Sans One', sans-serif;
 }
+
 .link {
     font-size: 12px;
     font-family: 'PT Sans Narrow', sans-serif;
     line-height: 0em;
 }
-.work__card > img {
-    width: 290px;
-    height: 168px;
+
+.work__card>img {
+    width: 100%;
+    height: 65%;
+}
+@media screen and (max-width: 500px) {
+    .header {
+        padding: 5px;
+    }
+    .name {
+        font-size: 22px;
+    }
+    small {
+        font-size: 10px;
+    }
+    .logo {
+        width: 30px;
+    }
+    .featured__container {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .work__card {
+        width: 200px;
+        margin: auto;
+        padding: 5px;
+
+    }
+    .featured__work__heading {
+        font-size: 20px;
+    }
+    .work__name {
+        text-align: center;
+        font-size: 18px;
+    }
+    .link {
+        text-align: center;
+    }
+
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    .name {
+        font-size: 28px;
+    }
+    .work__name {
+        font-size: 22px;
+    }
 }
